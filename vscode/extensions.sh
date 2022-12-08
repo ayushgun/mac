@@ -1,0 +1,13 @@
+code --install-extension cdonohue.quill-icons
+code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.copilot
+code --install-extension golang.go
+code --install-extension IronGeek.vscode-env
+code --install-extension James-Yu.latex-workshop
+code --install-extension magicstack.MagicPython
+code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension ms-python.isort
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ritwickdey.LiveServer
+code --install-extension tamasfe.even-better-toml
