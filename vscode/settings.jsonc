@@ -12,10 +12,7 @@
 		"editor.wordWrap": "on"
 	},
 	"[python]": {
-		"editor.defaultFormatter": null,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
-		}
+		"editor.defaultFormatter": null
 	},
 
 	// Editor settings
@@ -50,11 +47,9 @@
 	"go.lintOnSave": "package",
 	"go.useLanguageServer": true,
 	"gopls": {
-		"formatting.gofumpt": true
+		"formatting.gofumpt": true,
+		"ui.diagnostic.vulncheck": 0
 	},
-
-	// Terminal Settings
-	"terminal.integrated.fontFamily": "MonoLisa Nerd Font Mono",
 	"terminal.integrated.fontSize": 18,
 
 	// Workbench Settings
