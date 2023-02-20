@@ -1,4 +1,5 @@
 {
+	// Language-specific settings
 	"[go]": {
 		"editor.insertSpaces": true,
 		"editor.formatOnSave": true,
@@ -14,6 +15,15 @@
 	"[python]": {
 		"editor.defaultFormatter": null
 	},
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
 
 	// Editor settings
 	"editor.accessibilitySupport": "off",
@@ -25,9 +35,27 @@
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
 	"security.workspace.trust.untrustedFiles": "open",
+	"telemetry.telemetryLevel": "off",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+
+	// Minimal mode
+	"editor.minimap.enabled": false,
+	"editor.overviewRulerBorder": false,
+	"editor.renderLineHighlight": "none",
+	"editor.guides.indentation": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"zenMode.fullScreen": false,
+	"zenMode.hideLineNumbers": false,
+	"zenMode.silentNotifications": false,
+	"zenMode.centerLayout": false,
 
 	// Latex editor
 	"latex-workshop.view.pdf.viewer": "browser",
+	"latex-workshop.latex.autoBuild.run": "onSave",
 
 	// Live server
 	"liveServer.settings.donotShowInfoMsg": true,
@@ -36,13 +64,12 @@
 	// Prettier settings
 	"prettier.useTabs": true,
 
-	// Python settings
+	// Python extension settings
 	"python.analysis.autoImportCompletions": false,
 	"python.formatting.provider": "black",
-	"python.linting.pylintArgs": ["--disable=C0111"],
-	"python.linting.pylintEnabled": true,
+	"ruff.showNotifications": "always",
 
-	// Go settings
+	// Go extension settings
 	"go.lintTool": "golangci-lint",
 	"go.lintOnSave": "package",
 	"go.useLanguageServer": true,
@@ -50,16 +77,17 @@
 		"formatting.gofumpt": true,
 		"ui.diagnostic.vulncheck": 0
 	},
-	"terminal.integrated.fontSize": 18,
+
+	// Java extension settings
+	"java.saveActions.organizeImports": true,
 
 	// Workbench Settings
 	"workbench.startupEditor": "none",
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#272727",
-		"editor.selectionBackground": "#393939",
-		"editor.selectionHighlightBackground": "#393939"
-	},
+	"workbench.colorCustomizations": {},
 	"workbench.iconTheme": "quill-icons",
-	"workbench.colorTheme": "Monokai Pro",
-	"isort.check": true
+	"workbench.colorTheme": "Default Dark+ Experimental",
+
+	// Terminal Settings
+	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.persistentSessionReviveProcess": "never"
 }
