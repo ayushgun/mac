@@ -15,23 +15,22 @@
 	"[python]": {
 		"editor.defaultFormatter": null
 	},
-	"[toml]": {
-		"editor.defaultFormatter": "tamasfe.even-better-toml"
-	},
-	"[rust]": {
-		"editor.defaultFormatter": "rust-lang.rust-analyzer"
-	},
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java"
+	},
+	"[cpp]": {
+		"editor.defaultFormatter": "xaver.clang-format",
+		"editor.tabSize": 2,
+		"files.insertFinalNewline": true
 	},
 
 	// Editor settings
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": false,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.fontFamily": "iMWritingMonoS Nerd Font",
+	"editor.fontFamily": "MonoLisaNerdFontCompleteM-Regular",
 	"editor.fontLigatures": true,
-	"editor.fontSize": 20,
+	"editor.fontSize": 19,
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -52,9 +51,7 @@
 	"zenMode.hideLineNumbers": false,
 	"zenMode.silentNotifications": false,
 	"zenMode.centerLayout": false,
-
-	// Latex editor
-	"latex-workshop.view.pdf.viewer": "browser",
+	"zenMode.hideStatusBar": false,
 	"latex-workshop.latex.autoBuild.run": "onSave",
 
 	// Live server
@@ -69,25 +66,27 @@
 	"python.formatting.provider": "black",
 	"ruff.showNotifications": "always",
 
-	// Go extension settings
-	"go.lintTool": "golangci-lint",
-	"go.lintOnSave": "package",
-	"go.useLanguageServer": true,
-	"gopls": {
-		"formatting.gofumpt": true,
-		"ui.diagnostic.vulncheck": 0
-	},
-
-	// Java extension settings
-	"java.saveActions.organizeImports": true,
-
 	// Workbench Settings
 	"workbench.startupEditor": "none",
 	"workbench.colorCustomizations": {},
-	"workbench.iconTheme": "quill-icons",
-	"workbench.colorTheme": "Default Dark+ Experimental",
 
 	// Terminal Settings
 	"terminal.integrated.fontSize": 18,
-	"terminal.integrated.persistentSessionReviveProcess": "never"
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"latex-workshop.linting.lacheck.enabled": true,
+
+	// C++ Settings
+	"C_Cpp.default.cppStandard": "c++20",
+	"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+	"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+	"c-cpp-flylint.clang.standard": ["c++20"],
+	"c-cpp-flylint.flawfinder.enable": false,
+	"c-cpp-flylint.lizard.enable": false,
+	"c-cpp-flylint.flexelint.enable": false,
+	"clang-format.style": "Chromium",
+	"catppuccin.italicKeywords": false,
+	"catppuccin.italicComments": false,
+	"cmake.configureOnOpen": true,
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.iconTheme": "moxer-icons"
 }
