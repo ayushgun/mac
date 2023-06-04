@@ -1,9 +1,63 @@
 {
+	// Global Editor settings
+	"editor.accessibilitySupport": "off",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.defaultFormatter": "charliermarsh.ruff",
+	"editor.fontFamily": "JetBrainsMono-Regular",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 20,
+	"editor.formatOnSave": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.cursorBlinking": "phase",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"editor.cursorSmoothCaretAnimation": "explicit",
+	"editor.minimap.enabled": false,
+	"editor.overviewRulerBorder": false,
+	"editor.renderLineHighlight": "none",
+	"editor.guides.indentation": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	// Security and Telemetry settings
+	"security.workspace.trust.untrustedFiles": "open",
+	"telemetry.telemetryLevel": "off",
+	// Zen Mode settings
+	"zenMode.fullScreen": false,
+	"zenMode.hideLineNumbers": false,
+	"zenMode.silentNotifications": false,
+	"zenMode.centerLayout": false,
+	"zenMode.hideStatusBar": false,
+	// Terminal settings
+	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"terminal.integrated.fontWeightBold": "normal",
+	// Workbench settings
+	"workbench.startupEditor": "none",
+	"workbench.tree.indent": 10,
+	"workbench.layoutControl.enabled": false,
+	// Python settings
+	"python.analysis.autoImportCompletions": false,
+	"python.formatting.provider": "black",
+	"notebook.formatOnSave.enabled": true,
+	// C++ Settings
+	"c-cpp-flylint.clang.standard": [
+		"c++20"
+	],
+	"c-cpp-flylint.flawfinder.enable": false,
+	"c-cpp-flylint.lizard.enable": false,
+	"c-cpp-flylint.flexelint.enable": false,
+	"clang-format.style": "Chromium",
+	"cmake.configureOnOpen": true,
+	"clangd.checkUpdates": true,
+	"c-cpp-flylint.cppcheck.standard": [
+		"c++20"
+	],
 	// Language-specific settings
 	"[go]": {
 		"editor.insertSpaces": true,
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "golang.go"
+		"editor.formatOnSave": true
 	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,70 +77,31 @@
 		"editor.tabSize": 2,
 		"files.insertFinalNewline": true
 	},
-
-	// Editor settings
-	"editor.accessibilitySupport": "off",
-	"editor.bracketPairColorization.enabled": false,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.fontFamily": "MonoLisaNerdFontCompleteM-Regular",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 19,
-	"editor.formatOnSave": true,
-	"editor.inlineSuggest.enabled": true,
-	"security.workspace.trust.untrustedFiles": "open",
-	"telemetry.telemetryLevel": "off",
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": true
+	"[bibtex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	},
-
-	// Minimal mode
-	"editor.minimap.enabled": false,
-	"editor.overviewRulerBorder": false,
-	"editor.renderLineHighlight": "none",
-	"editor.guides.indentation": false,
-	"editor.scrollbar.horizontal": "hidden",
-	"editor.scrollbar.vertical": "hidden",
-	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
-	"zenMode.fullScreen": false,
-	"zenMode.hideLineNumbers": false,
-	"zenMode.silentNotifications": false,
-	"zenMode.centerLayout": false,
-	"zenMode.hideStatusBar": false,
+	// "[rust]": {
+	// 	"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	// },
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"explorer.sortOrder": "type",
+	// Other settings
 	"latex-workshop.latex.autoBuild.run": "onSave",
-
-	// Live server
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
-
-	// Prettier settings
-	"prettier.useTabs": true,
-
-	// Python extension settings
-	"python.analysis.autoImportCompletions": false,
-	"python.formatting.provider": "black",
-	"ruff.showNotifications": "always",
-
-	// Workbench Settings
-	"workbench.startupEditor": "none",
-	"workbench.colorCustomizations": {},
-
-	// Terminal Settings
-	"terminal.integrated.fontSize": 18,
-	"terminal.integrated.persistentSessionReviveProcess": "never",
-	"latex-workshop.linting.lacheck.enabled": true,
-
-	// C++ Settings
-	"C_Cpp.default.cppStandard": "c++20",
-	"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
-	"C_Cpp.codeAnalysis.clangTidy.enabled": true,
-	"c-cpp-flylint.clang.standard": ["c++20"],
-	"c-cpp-flylint.flawfinder.enable": false,
-	"c-cpp-flylint.lizard.enable": false,
-	"c-cpp-flylint.flexelint.enable": false,
-	"clang-format.style": "Chromium",
-	"catppuccin.italicKeywords": false,
-	"catppuccin.italicComments": false,
-	"cmake.configureOnOpen": true,
-	"workbench.colorTheme": "Catppuccin Mocha",
-	"workbench.iconTheme": "moxer-icons"
+	"ruff.showNotifications": "always"
 }
