@@ -3,7 +3,7 @@
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": false,
 	"editor.defaultFormatter": "charliermarsh.ruff",
-	"editor.fontFamily": "JetBrainsMono-Regular",
+	"editor.fontFamily": "Hasklig-Regular",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 20,
 	"editor.formatOnSave": true,
@@ -36,7 +36,6 @@
 	// Workbench settings
 	"workbench.startupEditor": "none",
 	"workbench.tree.indent": 10,
-	"workbench.layoutControl.enabled": false,
 	// Python settings
 	"python.analysis.autoImportCompletions": false,
 	"python.formatting.provider": "black",
@@ -48,17 +47,13 @@
 	"c-cpp-flylint.flawfinder.enable": false,
 	"c-cpp-flylint.lizard.enable": false,
 	"c-cpp-flylint.flexelint.enable": false,
-	"clang-format.style": "Chromium",
+	"clang-format.style": "Google",
 	"cmake.configureOnOpen": true,
 	"clangd.checkUpdates": true,
 	"c-cpp-flylint.cppcheck.standard": [
 		"c++20"
 	],
 	// Language-specific settings
-	"[go]": {
-		"editor.insertSpaces": true,
-		"editor.formatOnSave": true
-	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -67,7 +62,7 @@
 		"editor.wordWrap": "on"
 	},
 	"[python]": {
-		"editor.defaultFormatter": null
+		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java"
@@ -99,9 +94,24 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"explorer.sortOrder": "type",
+	// Catppuccin settings
+	"catppuccin.italicKeywords": false,
+	"catppuccin.italicComments": false,
+	"catppuccin.boldKeywords": false,
 	// Other settings
 	"latex-workshop.latex.autoBuild.run": "onSave",
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
-	"ruff.showNotifications": "always"
+	"ruff.showNotifications": "always",
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"terminal.integrated.fontFamily": "Hasklig-Regular",
+	"c-cpp-flylint.clang.includePaths": [
+		"include"
+	],
+	"clang-format.fallbackStyle": "Chromium",
+	"workbench.layoutControl.enabled": false,
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"editor.foldingHighlight": false
 }
