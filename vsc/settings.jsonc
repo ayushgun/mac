@@ -2,10 +2,7 @@
 	// Global Editor settings
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": false,
-	"editor.defaultFormatter": "charliermarsh.ruff",
-	"editor.fontFamily": "Hasklig-Regular",
 	"editor.fontLigatures": true,
-	"editor.fontSize": 20,
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
 	"editor.cursorBlinking": "phase",
@@ -30,7 +27,7 @@
 	"zenMode.hideStatusBar": false,
 	// Terminal settings
 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 20,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.fontWeightBold": "normal",
 	// Workbench settings
@@ -38,10 +35,12 @@
 	"workbench.tree.indent": 10,
 	// Python settings
 	"python.analysis.autoImportCompletions": false,
-	"python.formatting.provider": "black",
 	"notebook.formatOnSave.enabled": true,
 	// C++ Settings
 	"c-cpp-flylint.clang.standard": [
+		"c++20"
+	],
+	"c-cpp-flylint.gcc.standard": [
 		"c++20"
 	],
 	"c-cpp-flylint.flawfinder.enable": false,
@@ -64,13 +63,16 @@
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
+	"[jupyter]": {
+		"files.insertFinalNewline": false,
+	},
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java"
 	},
 	"[cpp]": {
 		"editor.defaultFormatter": "xaver.clang-format",
 		"editor.tabSize": 2,
-		"files.insertFinalNewline": true
+		"files.insertFinalNewline": false
 	},
 	"[bibtex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -94,24 +96,33 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"explorer.sortOrder": "type",
-	// Catppuccin settings
-	"catppuccin.italicKeywords": false,
 	"catppuccin.italicComments": false,
 	"catppuccin.boldKeywords": false,
 	// Other settings
 	"latex-workshop.latex.autoBuild.run": "onSave",
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
-	"ruff.showNotifications": "always",
 	"[yaml]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"terminal.integrated.fontFamily": "Hasklig-Regular",
 	"c-cpp-flylint.clang.includePaths": [
+		"/opt/homebrew/opt/boost/include",
+		"/opt/homebrew/opt/googletest/include",
 		"include"
 	],
 	"clang-format.fallbackStyle": "Chromium",
+	"editor.foldingHighlight": false,
+	"editor.fontFamily": "JetBrains Mono",
+	"catppuccin.italicKeywords": false,
+	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
+	"git.enableSmartCommit": true,
+	"editor.fontSize": 20,
 	"workbench.colorTheme": "Catppuccin Mocha",
-	"editor.foldingHighlight": false
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"clangd.path": "/Users/ayushgundawar/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+	"editor.inlayHints.enabled": "off"
 }
