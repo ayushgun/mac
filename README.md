@@ -5,8 +5,8 @@ This repository is a collection of highly opinionated dotfiles customized exclus
 # Sections
 
 - `zsh`: my zsh profile, prompt, and config
-- `vscode`: vscode settings and extensions
+- `vsc`: vscode settings
 
 # Fonts
 
-You should install the `Source Code Pro` (nerd) font prior to using these dotfiles.
+You should install the `JetBrains Mono` (nerd) font prior to using these dotfiles.
