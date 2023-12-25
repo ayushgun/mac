@@ -1,0 +1,87 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "files.associations": {
+    "*.json": "json"
+  },
+  "workbench.tips.enabled": false,
+  "workbench.activityBar.location": "top",
+  "window.commandCenter": false,
+  // Editor
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "block-outline",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 17,
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.foldingHighlight": false,
+  "editor.smoothScrolling": true,
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "none",
+  "editor.guides.indentation": false,
+  "editor.inlayHints.enabled": "off",
+  "explorer.sortOrder": "type",
+  "editor.bracketPairColorization.enabled": false,
+  // C++
+  "[cpp]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+  // C
+  "[c]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+  // LaTeX
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "[latex]": {
+    "editor.wordWrap": "on"
+  },
+  // JSON
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Files
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  // Minimal Mode
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.silentNotifications": false,
+  // Terminal
+  "terminal.external.osxExec": "kitty.app",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.fontSize": 19,
+  // Telemetry
+  "telemetry.telemetryLevel": "off",
+  // Git
+  "git.autofetch": true,
+  // Python
+  "python.defaultInterpreterPath": "python3",
+  "python.experiments.enabled": false,
+  "notebook.formatOnSave.enabled": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // Clangd (C++ LSP)
+  "clangd.checkUpdates": true,
+  // CMake (C++ Build Tool)
+  "cmake.configureOnOpen": false,
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.options.statusBarVisibility": "icon"
+}
