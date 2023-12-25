@@ -52,11 +52,14 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Files
+  // File Explorer
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/.git": false
+  },
   // Minimal Mode
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
