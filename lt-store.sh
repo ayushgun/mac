@@ -28,3 +28,10 @@ cp "$ZSHRC_SRC" "$ZSHRC_DEST"
 cd ~/Documents/Programming/Dotfiles
 
 echo "Dotfiles updated successfully."
+
+# Create a commit with a message including the current date and the device information
+current_date=$(date "+%Y-%m-%d")
+commit_message="Updating repo from my laptop on $current_date"
+git add .
+git commit -m "$commit_message"
+git push

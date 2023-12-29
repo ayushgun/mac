@@ -14,7 +14,7 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "block-outline",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontSize": 17,
   "editor.formatOnSave": true,
   "editor.minimap.autohide": true,
@@ -57,9 +57,6 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
-  "files.exclude": {
-    "**/.git": false
-  },
   // Minimal Mode
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
